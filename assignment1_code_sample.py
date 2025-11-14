@@ -12,6 +12,7 @@ def get_user_input():
     user_input = input('Enter your name: ')
     return user_input
 
+
 def send_email(to, subject, body):
     os.system(f'echo {body} | mail -s "{subject}" {to}')
 
